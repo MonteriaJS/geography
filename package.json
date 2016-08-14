@@ -1,0 +1,29 @@
+{
+  "name": "geography",
+  "version": "1.0.0",
+  "description": "A library that show it all the information of Colombia geographic. Soon other countries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonteriaJS/geography.git"
+  },
+  "keywords": [
+    "Geography",
+    "MonteríaJS",
+    "NodeJS",
+    "Javascript"
+  ],
+  "author": "MonteríaJS <monteriajs@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonteriaJS/geography/issues"
+  },
+  "homepage": "https://github.com/MonteriaJS/geography#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta5"
+  }
+}
