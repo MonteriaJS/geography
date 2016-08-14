@@ -1,1 +1,43 @@
-h1 Hola mundo
+doctype html
+html(lang="es")
+
+	head
+		title='GeographyJS'
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+		link(rel="stylesheet" href="css/style.css")
+
+	body
+		nav.green.darken-2
+			.nav-wrapper
+				a.brand-logo GeographyJS
+					i.material-icons language
+				ul#nav-mobile.right.hide-on-med-and-down
+					li
+						a(href="#") Item
+					li
+						a(href="#") Item
+					li
+						a(href="#") Item
+
+		.container.row.z-depth-1
+			.col.s10.offset-s1
+				h2 Bienvenido a GeographyJS
+				.divider
+				p
+					strong GeographyJS 
+					| es una librería que busca enseñar a todas las personas sobre la geografía mundial, comportandose como una herramienta de estudio para quienes la necesiten.
+					.row
+						.input-field.col.s4.offset-s3
+							input#town.town(type="text")
+							label(for="town") Ingresa un municipio...
+
+						a.col.s2.waves-effect.waves-light.btn
+							i.material-icons.left search
+							| Buscar
+
+
+
+		script(type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js")
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js")
+		script(type="text/javascript" src="js/geography.js")
