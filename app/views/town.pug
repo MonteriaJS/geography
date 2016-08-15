@@ -1,0 +1,36 @@
+doctype html
+html(lang="es")
+
+	head
+		title='GeographyJS'
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+		link(rel="stylesheet" href="css/style.css")
+
+	body
+		nav.green.darken-2
+			.nav-wrapper
+				a.brand-logo #{town.nombre}
+					i.material-icons language
+				ul#nav-mobile.right.hide-on-med-and-down
+					li
+						a(href="#") Item
+					li
+						a(href="#") Item
+					li
+						a(href="#") Item
+
+		div#map
+
+	script(type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js")
+	script(type="text/javascript").
+			var town = {
+				id			: "#{town.id}",
+				name 		: "#{town.nombre}",
+				cod_dane 	: "#{town.codDane}",
+				coordinates : JSON.parse("#{town.coordenadas}".replace(/&quot;/g,'"'))
+			};
+
+	script(type="text/javascript" src="js/geography.js")
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd7hvIoBjEtsUmFnQSmr2T4CdqywANtXc&signed_in=true&callback=initMap")
+
