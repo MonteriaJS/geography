@@ -11,31 +11,32 @@ html(lang="es")
 		nav.green.darken-2
 			.nav-wrapper
 				a.brand-logo GeographyJS
-					i.material-icons language
+					i.material-icons.world language
 				ul#nav-mobile.right.hide-on-med-and-down
 					li
-						a(href="#") Item
+						a(href="#") Conoce el mundo
 					li
-						a(href="#") Item
-					li
-						a(href="#") Item
+						a(href="#") Ayuda
 
-		.container.row.z-depth-1
-			.col.s10.offset-s1
-				h2 Bienvenido a GeographyJS
-				.divider
-				p
+		.row.main-content
+			.col.s6.offset-s3.main-content__geography.z-depth-1
+				h3.main-content__geography__title Bienvenido a GeographyJS
+				.divider.col.s10.offset-s1
+				p.col.s10.offset-s1
 					strong GeographyJS 
 					| es una librería que busca enseñar a todas las personas sobre la geografía mundial, comportandose como una herramienta de estudio para quienes la necesiten.
 					.row
-						.input-field.col.s4.offset-s3
+						.input-field.col.s5.offset-s2
 							input#town.town(type="text")
 							label(for="town") Ingresa un municipio...
 
-						a.col.s2.waves-effect.waves-light.btn#button
+						a.col.s3.waves-effect.waves-light.btn#button.cyan
 							i.material-icons.left search
 							| Buscar
 
+		footer.row
+				span.col.s12 Created by 
+					a(href="http://monteriajs.org") MonteríaJS
 
 
 		script(type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js")

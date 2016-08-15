@@ -10,15 +10,17 @@ html(lang="es")
 	body
 		nav.green.darken-2
 			.nav-wrapper
-				a.brand-logo #{town.nombre}
-					i.material-icons language
-				ul#nav-mobile.right.hide-on-med-and-down
+				a.brand-logo.right #{town.nombre}
+					i.material-icons.world language
+
+				ul#nav-mobile.left.hide-on-med-and-down
 					li
-						a(href="#") Item
+						a(href="/")
+							i.material-icons arrow_back
 					li
-						a(href="#") Item
+						a(href="#") Conoce el mundo
 					li
-						a(href="#") Item
+						a(href="#") Ayuda
 
 		div#map
 

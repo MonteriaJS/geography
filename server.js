@@ -16,14 +16,13 @@ server.get('/', function (req, res) {
 server.get('/:name_town', function (req, res) {
 	let name = req.params.name_town;
 
-	searchTown(name);
+	searchTown(name)
 		.then(function(obj){
 			res.render('town', {town: obj});
-		});
+		})
 		.catch(function(err){
 			res.redirect('/');
-		});
-
+		})
 });
 
 server.listen(3000, function () {

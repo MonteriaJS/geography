@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	search();
-})
+});
 
 function search(){
 	$('#button').click(function(){

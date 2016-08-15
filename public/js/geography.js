@@ -1,5 +1,5 @@
-var map
-var polygon
+var map = "";
+var polygon = "";
 
 $(document).ready(function () {
 	initMap()
@@ -17,7 +17,7 @@ function initMap(){
 
 function drawTown(){
 	map.setCenter(town.coordinates[0]);
-	map.setZoom(8);
+	map.setZoom(11);
 	polygon = new google.maps.Polygon({
 		path 			: town.coordinates,
 		strokeColor		: 'gray',
