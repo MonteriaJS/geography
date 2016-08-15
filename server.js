@@ -3,28 +3,26 @@ const express 		= require('express');
 const server 		= express();
 const fs 			= require('fs');
 const searchTown 	= require('./app/utils/search-town');
-// const mysql 		= require('mysql');
-
 
 
 server.set('views', `${__dirname}/app/views`);
 server.set('view engine', 'pug');
-server.use( express.static( `${__dirname}/public` ) )
+server.use( express.static( `${__dirname}/public` ) );
 
 server.get('/', function (req, res) {
 	res.render('index');
 });
 
 server.get('/:name_town', function (req, res) {
-	let name = req.params.name_town
+	let name = req.params.name_town;
 
-	searchTown(name)
+	searchTown(name);
 		.then(function(obj){
-			res.render('town', {town: obj})
-		})
+			res.render('town', {town: obj});
+		});
 		.catch(function(err){
-			res.redirect('/')
-		})
+			res.redirect('/');
+		});
 
 });
 
