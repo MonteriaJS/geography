@@ -8,7 +8,7 @@ module.exports = function(nombre){
 			if  (!err){
 				// se declaran los municipios
 				let towns = JSON.parse(file);
-				let searched
+				let searched = null;
 
 				// recorremos el array json para buscar el municipio
 				towns.forEach( function(town, index) {

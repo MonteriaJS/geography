@@ -17,7 +17,7 @@ function initMap(){
 
 function drawTown(){
 	map.setCenter(town.coordinates[0]);
-	map.setZoom(11);
+	map.setZoom(10);
 	polygon = new google.maps.Polygon({
 		path 			: town.coordinates,
 		strokeColor		: 'gray',
